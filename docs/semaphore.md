@@ -53,7 +53,7 @@ export async function main(ns){
     }
     await mySemaphore.wait(5)
     // or alternatively,
-    // semaphore.wait("hack", 5)
+    // await semaphore.wait("hack", 5)
     ns.tprint("All worker scripts have finished")
 }
 ```
